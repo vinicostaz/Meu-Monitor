@@ -11,7 +11,7 @@
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/carousel/">
 
-    
+   
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
 
@@ -96,7 +96,7 @@
       }
     </style>
 
-    
+   
     <!-- Custom styles for this template -->
     <link href="styles.css" rel="stylesheet">
   </head>
@@ -152,7 +152,7 @@
       </ul>
     </div>
 
-    
+   
 <header>
   <nav class="navbar navbar-expand-md navbar-primary fixed-top bg-primary">
     <div class="container-fluid">
@@ -188,7 +188,7 @@
   <!-- Wrap the rest of the page in another container to center all the content. -->
 
   <div class="container marketing">
-    
+   
     <div class="row">
       <div class="col-lg-4">
           <select class="form-select" id="inputGroupSelect01" style="background-color: rgb(9, 97, 212); color: white;">
@@ -223,7 +223,7 @@
       <div class="col-lg-6">
         <div class="card">
           <img src="https://www.jdv.com.br/wp-content/uploads/2023/02/visao-superior-sobre-itens-de-orientacao-de-carreira-para-juizes-e1676656790562.jpg" width=100% height=100% class="card-img-top" alt="...">
-        
+       
           <div class="card-body" style="background-color: rgb(9, 97, 212)">
             <h5 class="card-title" style="color: white;">J026 | Recuperação Judicial</h5>
             <p class="card-text" style="color: white;">3 PARTICIPANTES</p>
@@ -234,7 +234,7 @@
       <div class="col-lg-6">
         <div class="card">
           <img src="https://www.jdv.com.br/wp-content/uploads/2023/02/visao-superior-sobre-itens-de-orientacao-de-carreira-para-juizes-e1676656790562.jpg" width=100% height=100% class="card-img-top" alt="...">
-        
+       
           <div class="card-body" style="background-color: rgb(9, 97, 212)">
             <h5 class="card-title" style="color: white;">J026 | Recuperação Judicial</h5>
             <p class="card-text" style="color: white;">6 PARTICIPANTES</p>
@@ -249,18 +249,124 @@
 <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
     Criar grupo de estudo
   </button>
-  
+ 
   <!-- Modal -->
   <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
+    <div class="modal-dialog modal-lg">
       <div class="modal-content">
         <div class="modal-header">
           <h1 class="modal-title fs-5" id="exampleModalLabel">Criação de grupo de estudo</h1>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          ...
+          <h5 style="text-align: center;">Selecione o curso:</h5>
+          <hr>
+          <div class="row">
+            <div class="col-lg-4">
+                <select class="form-select" id="inputGroupSelect01" style="background-color: rgb(9, 97, 212); color: white;">
+                  <option selected style="color: white;">Todos os centros</option>
+                  <option value="1" style="color: white;">CCT</option>
+                  <option value="2" style="color: white;">CCS</option>
+                  <option value="3" style="color: white;">CCG</option>
+                  <option value="4" style="color: white;">CCJ</option>
+                </select>
+            </div><!-- /.col-lg-4 -->
+            <div class="col-lg-4">
+                <select class="form-select" id="inputGroupSelect01" style="background-color: rgb(9, 97, 212); color: white;">
+                  <option selected style="color: white;">Todos os cursos</option>
+                  <option value="1" style="color: white;">Medicina</option>
+                  <option value="2" style="color: white;">Engenharia Civil</option>
+                  <option value="3" style="color: white;">Direito</option>
+                  <option value="4" style="color: white;">Ciência da Computação</option>
+                </select>
+            </div><!-- /.col-lg-4 -->
+            <div class="col-lg-4">
+              <select class="form-select" id="inputGroupSelect01" style="background-color: rgb(9, 97, 212); color: white;">
+                <option selected style="color: white;">Todas as cadeiras</option>
+                <option value="1" style="color: white;">J026 - Recuperação judicial</option>
+                <option value="2" style="color: white;">J028 - Direito civil V - das famílias</option>
+                <option value="3" style="color: white;">J029 - Relações de trabalho I</option>
+                <option value="4" style="color: white;">J030 - Direito processual civil III</option>
+              </select>
+            </div><!-- /.col-lg-4 -->
+          </div><!-- /.row -->
+          <hr>
+          <h5 style="text-align: center;">Horários:</h5>
+          <hr>
+          <div class="row">
+            <div class="col-lg-4">
+              <h5>Manhã:</h5>
+            </div><!-- /.col-lg-4 -->
+            <div class="col-lg-4">
+              <h5>Tarde:</h5>
+            </div><!-- /.col-lg-4 -->
+            <div class="col-lg-4">
+              <h5>Noite:</h5>
+              </div>
+          </div><!-- /.row -->
+          <div class="row">
+            <div class="col-lg-4">
+              <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+                <label class="btn btn-outline-primary" for="btnradio1">AB</label>
+             
+                <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+                <label class="btn btn-outline-primary" for="btnradio2">CD</label>
+             
+                <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+                <label class="btn btn-outline-primary" for="btnradio3">EF</label>
+              </div>
+            </div><!-- /.col-lg-4 -->
+            <div class="col-lg-4">
+              <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                <input type="radio" class="btn-check" name="btnradio" id="btnradio4" autocomplete="off" checked>
+                <label class="btn btn-outline-primary" for="btnradio4">AB</label>
+             
+                <input type="radio" class="btn-check" name="btnradio" id="btnradio5" autocomplete="off">
+                <label class="btn btn-outline-primary" for="btnradio5">CD</label>
+             
+                <input type="radio" class="btn-check" name="btnradio" id="btnradio6" autocomplete="off">
+                <label class="btn btn-outline-primary" for="btnradio6">EF</label>
+              </div>
+            </div><!-- /.col-lg-4 -->
+            <div class="col-lg-4">
+              <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                <input type="radio" class="btn-check" name="btnradio" id="btnradio7" autocomplete="off" checked>
+                <label class="btn btn-outline-primary" for="btnradio7">AB</label>
+             
+                <input type="radio" class="btn-check" name="btnradio" id="btnradio8" autocomplete="off">
+                <label class="btn btn-outline-primary" for="btnradio8">CD</label>
+              </div>
+          </div><!-- /.row -->
         </div>
+        <form>
+          <div class="mb-3">
+            <hr>
+            <h5>Local:</h5>
+            <hr>
+            <input type="radio" class="btn-check" name="btnradio" id="btnradio9" autocomplete="off">
+                <label class="btn btn-outline-primary" for="btnradio9">Sala virtual</label>
+                <br>
+            <textarea class="form-control" id="message-text" placeholder="Informe o link de acesso para os encontros"></textarea>
+            <br>
+            <input type="radio" class="btn-check" name="btnradio" id="btnradio10" autocomplete="off">
+                <label class="btn btn-outline-primary" for="btnradio10">Sala Presencial</label>
+                <br>
+            <textarea class="form-control" id="message-text" placeholder="Informe a sala onde irá acontecer os encontros"></textarea>
+          </div>
+        </form>
+          <form>
+            <div class="mb-6">
+              <hr>
+              <h5>Descrição:</h5>
+              <hr>
+              <textarea class="form-control" id="message-text"></textarea>
+            </div>
+          </form>
+
+       
+
+       
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
           <button type="button" class="btn btn-primary">Criar</button>
@@ -268,13 +374,14 @@
       </div>
     </div>
   </div>
-    <hr class="featurette-divider">
+   
 
     <!-- /END THE FEATURETTES -->
 
   </div><!-- /.container -->
 
-
+  <br>
+  <br>
   <!-- FOOTER -->
   <div id="footer" class="w-auto p-3" style="background-color: rgb(9, 97, 212)">
     <div class="container">
